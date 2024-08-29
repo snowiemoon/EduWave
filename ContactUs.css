@@ -1,0 +1,148 @@
+.contact_us .blueBG {
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  height: 300px;
+  background-image: url(Images/Blue-Banner3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.contact_us .container-block.container {
+  position: relative;
+  min-height: 75px;
+  flex-direction: column;
+  z-index: 2;
+  max-width: 800px;
+  margin-top: 120px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+
+.contact_us .container-block.form-wrapper {
+  background-color: white;
+  max-width: 799px;
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+.contact_us .cell-block {
+  min-height: 75px;
+}
+
+.contact_us .text-ctu.input-title{
+  text-align: left;
+  padding-left: 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: rgb(50, 46, 46);
+}
+
+.contact_us .input{
+  width: 96%;
+  height: 50px;
+  padding-top: 1px;
+  padding-right: 15px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border-color: #b1a6a6;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.contact_us .textinput{
+  width: 98%;
+  min-height: 150px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.contact_us .submit-btn, .review .submit-btn{
+  width: 98%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color:#2b5790;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: #ffffff;
+  justify-content: center;
+  padding: 5px 15px 10px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.contact_us ::placeholder {
+  color: #b1a6a6;
+  font-size: 15px;
+}
+
+.contact_us .text-ctu.contactus-subhead {
+  color: #9c9c9c;
+  margin-bottom: 50px;
+}
+.review{
+  max-width: 799px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.review .review-subhead{
+  color: #575757;
+}
+.review .card{
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+}
+.review-form-content{
+  margin-top: 25px;
+}
+.review .card i{
+  font-size: xx-large;
+}
+.review .card .star-btn{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.review textarea{
+  height: 100px;
+}
+.review-label{
+  margin-top: 40px;
+}
+.star {
+  font-size: 2rem;
+  color: gold;
+}
+.submit-btn{
+  margin-top: 25px;
+}

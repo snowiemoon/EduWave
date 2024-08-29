@@ -1,0 +1,314 @@
+html{
+    scroll-behavior: smooth;
+}
+.row{
+  width: 100%;
+}
+.hero{
+    margin-bottom: 50px;
+}
+.top-bg{
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgb(169, 229, 255), rgba(255,0,0,0));
+}
+#Intro-Msg{
+    width: 80%;
+    margin-top: 120px;
+    padding-bottom: 25px;
+    font-weight: 650;
+    background: -webkit-linear-gradient(315deg, rgb(66, 130, 209), 60%, rgb(102, 31, 148));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.EduWave{
+    padding-left: 70%;
+}
+.get-started{
+    margin-top: 50px;
+}
+.get-started .btn{
+    border: none;
+    background-color:#2b5790;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    color: #ffffff;
+    font-weight: 400;
+    height: 30px;
+    justify-content: center;
+    padding: 10px 15px 35px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.get-started .btn:hover{
+    background-color:#467abe;
+}
+.hero-right {
+    margin-top: 120px;
+    position: relative;
+    animation: moveUpFade 0.8s linear forwards;
+}
+.hero-left{
+    margin-top: 130px;
+    background-color: #3a7bb842;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    padding-bottom: 25px;
+    box-shadow: rgba(99, 99, 99, 0.408) 0px 2px 8px 0px;
+    animation: moveUpFade 0.8s linear forwards;
+}
+@keyframes moveUpFade {
+    from {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+}
+
+.hero-left .container{
+    margin-top: 10%;
+    background-color: #2b579051;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    padding-bottom: 25px;
+    background-size: cover;
+}
+.hero-img{
+    width: 100%;
+}
+.hero-logo{
+    padding-top: 50px;
+    padding-left: 80px;
+    width: 80%;
+}
+.quote{
+    margin-top: 100px;
+}
+.quote h4{
+    text-align: center;
+    border-right: 2px solid rgb(0, 0, 0);
+}
+.quote p{
+    padding-top: 25px;
+    padding-left: 63%;
+}
+.card-icon{
+    font-size: xx-large;
+}
+.middle-bg{
+    background: 
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 50%, rgb(255, 255, 255) 100%), 
+    url('Images/Blue-Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 80px;
+}
+.Header{
+    padding-top: 100px;
+    padding-left: 20px;
+}
+.feature-cards{
+    margin-top: 150px;
+}
+.ft-anim{
+    animation: features 0.8s linear forwards;
+}
+
+.feature-title i, .review-title i{
+    font-size: larger;
+    color: rgb(141, 201, 236);
+}
+.feature-cards .card {
+    background: #f4f4f4;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    height: 280px;
+    width: 300px;
+    margin-top: 25px;
+}
+
+.feature-cards .card:hover {
+    transform: translateY(-15px);
+    transition: transform 0.3s ease;
+}
+
+.feature-cards .btn{
+    border: 3px solid #2b5790;
+    width: 50%;
+}
+.feature-cards .card .card-icon{
+    color: #2b5790;
+}
+.review{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 200px;
+}
+.review .row{
+    margin-top: 25px;
+}
+.review-card{
+    background: white;
+    height: 250px;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.review-card:hover{
+    transform: translateY(-15px);
+    transition: transform 0.3s ease;
+}
+.review-head svg{
+    width: 40px;
+    height: 50px;
+    color: rgb(0, 170, 255);
+}
+.student-reviews{
+    margin-top: 100px;
+}
+.student-icon{
+    width: 100%;
+    border-radius: 50%;
+}
+.bi-star-fill{
+    color: rgb(255, 204, 49);
+}
+.community{
+    padding-bottom:150px;
+    margin-left: 10%;
+}
+.community-card{
+    background-image: url(Images/Blue-Banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;padding-left: 25px;
+    width: 90%;
+    height: 380px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.community-card .img-card{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.11);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    backdrop-filter: blur(100px); 
+    border: none;
+    border-radius: 15px;
+}
+.Community-Icon{
+    width: 100%;
+    animation: fadeIn linear 1s; 
+}
+.community-title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.community-button{
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.community-text{
+    padding-top: 45px;
+}
+.join-btn{
+    width: 80%;
+    background-color: #2b5790;
+    color: white;
+}
+.join-btn:hover{
+    background-color:#467abe;
+}
+
+/*Responsives*/
+@media only screen and (max-width: 1160px) {
+    .review-footer i{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 1022px) {
+    .review-card img{
+        display: none;
+    }
+    .student-name{
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 990px) {
+    .hero-left{
+        margin-top: 30%;
+        padding-left: 5%;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        box-shadow: none;
+    }
+    .hero-img{
+        width: 100%;
+    }
+    .feature-cards .card{
+        width: 100%;
+        overflow: hidden;
+    }
+    .feature-cards .card .btn{
+        display: none;
+    }
+    .community-card{
+        height: 800px;
+    }
+    .community-img-responsive, .img-card{
+        width: 100%;
+    }
+    .community-info-responsive{
+        margin-top: 40px;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 882px) {
+    .review-responsive{
+        margin-top: 45px;
+        width: 50%;
+    }
+    .review-card img{
+        display: block;
+        width: 100%;
+    }
+    .student-profile{
+        width: 70%;
+    }
+    .student-name{
+        margin-top: 25px;
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .community-card{
+        height: 700px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .review-responsive{
+        margin-top: 45px;
+        width: 100%;
+    }
+    .review-card img{
+        display: block;
+        width: 50%;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .nav-btn{
+        display: none;
+    }
+  }

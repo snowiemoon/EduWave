@@ -1,0 +1,100 @@
+nav{
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 60px;
+}
+.navbar-nav{
+    width: 85%;
+}
+.navbar-scrolled{
+    background-color: rgb(255, 255, 255);
+    animation: fadeIn 0.1s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    25% { opacity: 0.25;}
+    50% { opacity: 0.5;}
+    75% { opacity: 0.75;}
+    100% { opacity: 1; }
+  }  
+.nav-logo{
+    width: 50px;
+    margin-right: 15px;
+}
+.nav-btn button{
+    border: none;
+    color: white;
+    background-image: linear-gradient(315deg, #2b5790 0%, #579dde 75%);
+    /*background-color: #2b5790;*/
+}
+.nav-btn button:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.3s ease;
+  }
+.modalRight .btn{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.Register-submit{
+    width: 100%;
+}
+.login-submit{
+    width: 100%;
+}
+.Register-submit a, .login-submit a{
+    text-decoration: none;
+    color: white;
+}
+.modal p{
+    text-align: center;
+}
+button img{
+    width: 25px;
+}
+.btn-continue{
+    justify-content: center;
+}
+.modal-img{
+    width: 100%;
+}
+/*For another navbar*/
+
+.nav-name{
+    width: 150px;
+}
+.search-bar{
+    padding-left: 60%;
+    display: flex;
+    align-items:end;
+    justify-content: space-between; 
+}
+#searchInput:focus{
+    border: 1px solid rgb(35, 35, 35);
+    box-shadow: none;
+    outline: none;
+}
+.search-bar button{
+    background-color: none;
+    border: none;
+    padding: 0;
+    margin: none;
+}
+.search-icon {
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #579dde;
+    padding: 3px 6px;
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+}
+@media only screen and (max-width: 1150px){
+    .navbar-nav{
+        width: 80%;
+    }
+  }
+
+@media only screen and (max-width: 990px){
+    .navbar-collapse{
+        padding: 25px;
+        background-color: white;
+    }
+  }

@@ -1,0 +1,87 @@
+.aboutUs{
+    margin-top: 100px;
+}
+.aboutUs h2{
+    text-align: center;
+}
+.introduction{
+    margin-top: 50px;
+    margin-bottom: 125px;
+}
+.information{
+    padding: 30px;
+    border-radius: 25px;
+}
+.information p{
+    animation: fadeIn linear 1s; 
+}
+mark{
+    background-color: rgb(201, 239, 255);
+}
+.intro-icon{
+    width: 300px;
+    animation: fadeIn linear 1s; 
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.background{
+    margin-top: 50px;
+    width: 300px;
+    background-color: rgb(201, 239, 255);
+    border-radius: 50px;
+}
+.ot{
+    text-align: center;
+}
+.banner{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-image: url("Images/Blue-Banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+.clear-box{
+    margin: 25px;
+    background-color: rgba(255, 255, 255, 0.11);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    backdrop-filter: blur(100px); 
+    border: none;
+    border-radius: 15px;
+}
+.clear-box:hover{
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+}
+.ourteam p{
+    text-align: center;
+}
+.member-pic{
+    width: 100%;
+    padding: 25px;
+}
+.FAQ{
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.FAQ h4{
+    text-align: center;
+}
+.accordion-button:focus{
+    box-shadow: none;
+    background-color: white;
+}
+
+.accordion-button.collapsed::after {
+    background: url("Images/plus-circle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    background: url("Images/dash-circle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

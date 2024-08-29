@@ -1,0 +1,94 @@
+.bi-gear{
+    font-size: x-large;
+}
+.row{
+    width: 100%;
+}
+.sidebar{
+    background-image: linear-gradient(to bottom, #9ed1f3, rgb(206, 236, 249));
+    margin: 0;
+    height: 100%;
+}
+.sidebar-content{
+    height: 500px;
+}
+.sidebar-list{
+    list-style-type: none;
+}
+.sidebar-menu a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar-menu{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid rgb(81, 144, 171);
+}
+.sidebar-menu:hover{
+    background-color: rgb(127, 205, 238);
+}
+.menu-title{
+    margin-left: 45px;
+    margin-right: 100px;
+}
+.acc-icon{
+    overflow: hidden;
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+    position: relative;
+}
+input[type="file"] {
+    display: none;
+  }
+.custom-pfp-upload {
+    z-index: 2;
+    left: 13%;
+    top: 25%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: inline-block;
+    padding: 6px 12px 10px;
+    cursor: pointer;
+}
+#userPfp{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.name{
+    text-align: center;
+}
+.sidebar-icon{
+    background-color: rgb(115, 189, 220);
+    padding: 2px 6px 5px 6px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .sidebar-menu .row .sidebar-icon{
+        width: 10%;
+    }
+    .sidebar-menu .row .menu-title{
+        width: 80%;
+        margin-left: 10px;
+    }
+  }
+  @media only screen and (max-width: 890px) {
+    .sidebar-menu .row .menu-title{
+        width: 90%;
+        margin-left: 10px;
+        margin-right: none;
+    }
+    .arrow-icon{
+        display: none;
+    }
+  }
+ @media only screen and (max-width:  766px) {
+    .sidebar{
+        display: none;
+    }
+  }

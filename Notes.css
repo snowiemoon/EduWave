@@ -1,0 +1,139 @@
+body{
+    margin-top: 60px;
+    height: 580px;
+}
+.user-data{
+    margin-top: 3%;
+}
+#entryForm{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+#title{
+    width: 70%;
+}
+#body{
+    width: 70%;
+    margin-bottom: 45px;
+    height: 200px;
+}
+#entryForm textarea{
+    padding: 15px;
+}
+#entryForm input:focus{
+    box-shadow: none;
+    outline: none;
+}
+#entryForm textarea:focus{
+    box-shadow: none;
+    outline: none;
+}
+#notesSection{
+    height: 500px;
+    overflow-y: scroll;
+}
+.note-card {
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #000000;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+#create{
+    margin-left: 40px;
+    border: none;
+    background-color:#2b5790;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    color: #ffffff;
+    height: 30px;
+    justify-content: center;
+    padding: 5px 15px 30px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+#create:hover{
+    background-color:#467abe;
+}
+#color{
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 5px;
+    background-color:#e7e7e7;
+    border: none;
+}
+.blue {
+    background-color: rgb(190, 218, 243);
+}
+
+.green {
+    background-color: rgb(214, 244, 196);
+}
+
+.red {
+    background-color: rgb(246, 192, 192);
+}
+.yellow{
+    background-color: rgb(251, 251, 211);
+}
+.pink{
+    background-color: rgb(252, 219, 240);
+}
+.orange{
+    background-color: rgb(250, 234, 204);
+}
+.purple{
+    background-color: rgb(221, 198, 252);
+}
+.white{
+    background-color: #f6f6f6;
+}
+.gray{
+    background-color: rgb(133, 133, 133);
+}
+.note-header{
+    display: flex;
+    width: 100%;
+    background-color: #00000016;
+    height: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.note-date{
+    padding-top: 13px;
+    color: #555555;
+}
+.note-title{
+    align-content: center;
+}
+.note-title, .note-body{
+    padding-left: 25px;
+}
+.note-body{
+    padding: 25px;
+}
+.note-footer{
+    margin-left: 75%;
+    padding-bottom: 15px;
+}
+.note-footer a{
+    padding: 5px;
+    color: #555555;
+}
+
+/*Nav Responsive*/
+
+@media only screen and (max-width: 1190px) {
+    .navbar-brand{
+        width: 20%;
+    }
+    .search-bar{
+        width: 50%;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+    #notesSection{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+}

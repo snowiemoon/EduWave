@@ -1,0 +1,62 @@
+.footer{
+    width: 100%;
+    background-color: rgb(170, 220, 255);
+    padding-top: 60px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    position: sticky;
+}
+.footer .row{
+    width: 100%;
+}
+.Footer-logo{
+    width: 50%;
+    margin-left: 30px;
+}
+.footer ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.social i{
+    font-size: xx-large;
+    padding-right: 5px;
+}
+.Gmail{
+    margin-top: 15px;
+}
+.stucom a{
+    margin-top: 15px;
+    color: white;
+}
+.copy-right{
+    margin-top: 20px;
+    text-align: center;
+}
+.join-btn{
+    width: 80%;
+    background-color: #2b5790;
+    color: white;
+}
+.join-btn:hover{
+    background-color:#467abe;
+}
+
+@media only screen and (max-width: 764px) {
+    .footer-p1, .footer-p2, .footer-p3, .footer-p4{
+        width: 50%;
+    }
+  }
+
+@media only screen and (max-width: 400px) {
+    .footer-p1, .footer-p2, .footer-p3, .footer-p4{
+        width: 100%;
+    }
+    .footer-p2, .footer-p3, .footer-p4{
+        margin-left: 15%;
+        margin-top: 30px;
+    }
+  }

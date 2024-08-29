@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduWave | Academic Organizer</title>
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="Footer.css">
+</head>
+<body>
+    <div class="top-bg">
+        <!--Start of Navigation Bar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="Images/Favicon.png" alt="icon" class="nav-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="StudyTips.html">Tips & Tricks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="nav-btn">
+                  <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#SignUpModal" class="signup-btn">Register</button>
+                  <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#LogInModal" class="login-btn">Log In</button>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <!--End of Navigation Bar-->
+<!--Sign Up-->
+<!--Start of Modal 1-->
+<div class="modal fade modal-lg" id="SignUpModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6 modalLeft">
+                        <img src="Images/Signup.jpg" alt="img" class="modal-img">
+                    </div>
+                    <div class="col-6 modalRight">
+                        <div>
+                            <h3>Create a Student Account</h3>
+                            <form class="Register-Form">
+                              <div class="mb-3">
+                                <label for="InputEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="InputEmail">
+                              </div>
+                                <div class="mb-3">
+                                  <label for="userName" class="form-label">User Name</label>
+                                  <input type="text" class="form-control" id="userName">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="InputPassword" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="InputPassword">
+                                </div>
+                                <button type="button" class="btn btn-primary Register-submit" onclick="window.location.href='Notes.html'">Register</button>
+                              </form>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!--Log In-->
+  <!--Start of Modal 2-->
+  <div class="modal fade modal-lg" id="LogInModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6 modalLeft">
+                        <img src="Images/Login.jpg" alt="img" class="modal-img">
+                    </div>
+                    <div class="col-6 modalRight">
+                        <div>
+                            <h3>Welcome Back</h3>
+                            <form class="Login-Form">
+                                <div class="mb-3">
+                                  <label for="InputEmail" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="OldEmail">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="InputPassword" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="OldPassword">
+                                </div>
+                                <button type="button" class="btn btn-primary login-submit" onclick="window.location.href='Notes.html'">Log In</button>
+                              </form>
+                          </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!--End of Modal 2-->
+<!--End of Modal Section-->
+<!-- Start of Hero Section -->
+<div class="container hero">
+    <div class="row">
+      <div class="col-md-7 hero-right">
+        <h1 id="Intro-Msg">The Best <br>Academic Organizer</h1>
+        <p>Stay organized, focused, and inspired — 
+          <br>your study journey deserves the best tools to help you shine!<br><span class="EduWave">- EduWave</span></p>
+        <div class="get-started">
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#SignUpModal">Get Started for free!</button>
+        </div>
+      </div>
+      <div class="col-md-5 hero-left">
+        <div class="container">
+          <img src="Images/EduWave-2.png" alt="img" class="hero-logo">
+          <img src="Images/BG-removebg-preview(1).png" alt="img" class="hero-img">
+        </div>
+      </div>
+    </div>
+</div>
+<!-- End of Hero Section -->
+</div>
+<div class="quote">
+  <h4>"<span  id="type-writer-quote"></span>"</h4>
+  <p> – George Bernard Shaw</p>
+</div>
+ <div class="middle-bg">
+    <!--Start of Features Introduction-->
+    <div class="feature-title">
+      <h3 class="Header"><i class="bi bi-caret-right-fill"></i> &nbsp;&nbsp;&nbsp;
+        <span>EduWave Features</span></h3>
+    </div>
+    <div class="container feature-cards">
+        <div class="row">
+          <div class="col-md-4">
+          <div class="card text-center mx-auto ft-card">
+            <i class="bi bi-journal card-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Notes</h5>
+              <p class="card-text">Take multiple notes and follow up your school lectures better than ever before!</p>
+              <a href="Features.html#Notes" class="btn">More...</a>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-4">
+          <div class="card text-center mx-auto ft-card">
+            <i class="bi bi-bell card-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Reminders</h5>
+              <p class="card-text">Set reminders for assignments and never forget to finish them before the due anymore!</p>
+              <a href="Features.html#Reminders" class="btn">More...</a>
+            </div>
+          </div>
+          </div>
+        
+          <div class="col-md-4">
+          <div class="card text-center mx-auto ft-card">
+            <i class="bi bi-calendar2-week card-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Timetable</h5>
+              <p class="card-text">Create time-tables to keep your day organized and showcase your professionalism!</p>
+              <a href="Features.html#Time-Table" class="btn">More...</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card text-center mx-auto ft-card">
+              <i class="bi bi-calendar-date card-icon"></i>
+              <div class="card-body">
+                <h5 class="card-title">Calender</h5>
+                <p class="card-text">Mark your important dates and track your progress for a outstanding results!</p>
+                <a href="Features.html#Calendar" class="btn">More...</a>
+              </div>
+            </div>
+            </div>
+        
+            <div class="col-md-4">
+              <div class="card text-center mx-auto ft-card">
+                <i class="bi bi-clock-history card-icon"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Timer</h5>
+                  <p class="card-text">Set timer when practicing exercises to keep you focuson your journey of improvements!</p>
+                  <a href="Features.html#Timer" class="btn">More...</a>
+                </div>
+              </div>
+              </div>
+        
+              <div class="col-md-4">
+                <div class="card text-center mx-auto ft-card">
+                  <i class="bi bi-trophy card-icon"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Set Goals</h5>
+                    <p class="card-text">Determind academic goals for motivation and track your accomplishments!</p>
+                    <a href="Features.html#Goals" class="btn">More...</a>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+<!--End of Features Introduction-->
+<!--Start of Student Reviews-->
+
+  <div class="review-title">
+    <h3 class="Header"><i class="bi bi-caret-right-fill"></i> &nbsp;&nbsp;&nbsp;
+      <span>Student Reviews</span></h3>
+  </div>
+  <div class="container-fluid review">
+    <div class="row">
+      <div class="col-md-3 review-responsive">
+        <div class="review-card card-1">
+          <div class="review-head">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+              <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+            </svg>
+          </div>
+          <div class="review-body">
+            <small>I love keeping things organized and this website is really useful, I also recommend it to my friends!</small>
+          </div>
+          <div class="review-footer">
+            <div class="row">
+              <div class="col-4">
+                <img src="Images/Girl1.jpg" alt="img" class="student-icon">
+              </div>
+              <div class="col-8 student-name">
+                <small>Eaindray Thwe Soe</small>
+                <br>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 review-responsive">
+        <div class="review-card card-2">
+          <div class="review-head">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+              <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+            </svg>
+          </div>
+          <div class="review-body">
+            <small>My high-school days had been easier since I started using EduWave. Great Stuff!</small>
+          </div>
+          <div class="review-footer">
+            <div class="row">
+              <div class="col-4">
+                <img src="Images/Boy1.jpg" alt="img" class="student-icon">
+              </div>
+              <div class="col-8 student-name">
+                <small>Alex Murphy</small>
+                <br>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 review-responsive">
+        <div class="review-card card-3">
+          <div class="review-head">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+              <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+            </svg>
+          </div>
+          <div class="review-body">
+            <small>This is the best free study planner out there! I love the notes & reminders the most.</small>
+          </div>
+          <div class="review-footer">
+            <div class="row">
+              <div class="col-4">
+                <img src="Images/Girl2.jpg" alt="img" class="student-icon">
+              </div>
+              <div class="col-8 student-name">
+                <small>Yasmin Ferrer</small>
+                <br>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 review-responsive">
+        <div class="review-card card-4">
+          <div class="review-head">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+              <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+            </svg>
+          </div>
+          <div class="review-body">
+            <small>After using EduWave, my grades have noticeably increased. Even better, it's free!</small>
+          </div>
+          <div class="review-footer">
+            <div class="row">
+              <div class="col-4">
+                <img src="Images/Boy2.jpg" alt="img" class="student-icon">
+              </div>
+              <div class="col-8 student-name">
+                <small>Cheng Xiu</small>
+                <br>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bottom-bg">
+<!--Start of Community-->
+<div class="community">
+  <div class="container">
+    <div class="card community-card">
+      <div class="row">
+        <div class="col-md-6 community-img-responsive">
+          <div class="card img-card">
+            <img src="Images/Students.jpg" alt="img" class="Community-Icon">
+          </div>
+        </div>
+        <div class="col-md-6 community-info-responsive">
+          <h3 class="community-title">EduWave Student Community</h3>
+          <p class="community-text">We've created a student community server for connecting with thousands of students all around the world. 
+            <br><br>
+            Share study methods, join study sessions, receive EduWave's updates and be the best student among all!</p>
+          <a href="https://discord.gg/4DQUtXVPRy" target=”_blank” class="btn join-btn community-button">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--Start of Footer Section-->
+<div class="footer">
+    <div class="row">
+      <div class="col-md-3 footer-p1">
+        <img src="Images/EduWave.png" alt="img" class="Footer-logo">
+      </div>
+      <div class="col-md-3 footer-p2">
+        <ul>
+          <b>Pages</b>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="StudyTips.html">Tips & Tricks</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          <li><a href="Reference.html">References</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-p3">
+        <ul>
+          <b>Our Features</b>
+          <li><a href="Features.html#Notes">Notes</a></li>
+          <li><a href="Features.html#Reminders">Reminders</a></li>
+          <li><a href="Features.html#Time-Table">Time-Table</a></li>
+          <li><a href="Features.html#Calendar">Calendar</a></li>
+          <li><a href="Features.html#Timer">Timer</a></li>
+          <li><a href="Features.html#Goals">Goals</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 social footer-p4">
+        <b>Get In Touch</b>
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=61565155768555&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+        <a href="https://t.me/+aLzxMEa9u480YmI1" target="_blank"><i class="bi bi-telegram"></i></a>
+        <a href="https://www.youtube.com/@EduWave_Official "><i class="bi bi-youtube"></i></a>
+        <br>
+        <p class="Gmail"><b>Gmail</b> eduwaveleo2024@gmail.com</p>
+        <div class="stucom">
+          <b>EduWave Student Community</b>
+          <a href="https://discord.gg/4DQUtXVPRy" target=”_blank” class="btn join-btn">Join Now</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copy-right">© 2024 EduWave | All Rights Reserved.</p>
+  </div>
+  <!--End of Footer Section-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="Index.js" type="module"></script>
+     <script src="Navbar.js"></script>
+</body>
+</html>

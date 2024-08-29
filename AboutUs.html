@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduWave | About Us</title>
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="AboutUs.css">
+    <link rel="stylesheet" href="Footer.css">
+</head>
+<body>
+            <!--Start of Navigation Bar-->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="Images/Favicon.png" alt="icon" class="nav-logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Features.html">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="StudyTips.html">Tips & Tricks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="AboutUs.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ContactUs.html">Contact us</a>
+                            </li>
+                        </ul>
+                        <div class="nav-btn">
+                          <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#SignUpModal" class="signup-btn">Register</button>
+                          <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#LogInModal" class="login-btn">Log In</button>
+                      </div>
+                    </div>
+                </div>
+            </nav>
+            <!--End of Navigation Bar-->
+        <!--Sign Up-->
+        <!--Start of Modal 1-->
+        <div class="modal fade modal-lg" id="SignUpModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header"><button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6 modalLeft">
+                                <img src="Images/Signup.jpg" alt="img" class="modal-img">
+                            </div>
+                            <div class="col-6 modalRight">
+                                <div>
+                                    <h3>Create a Student Account</h3>
+                                    <form class="Register-Form">
+                                      <div class="mb-3">
+                                        <label for="InputEmail" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="InputEmail">
+                                      </div>
+                                        <div class="mb-3">
+                                          <label for="userName" class="form-label">User Name</label>
+                                          <input type="text" class="form-control" id="userName">
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="InputPassword" class="form-label">Password</label>
+                                          <input type="password" class="form-control" id="InputPassword">
+                                        </div>
+                                        <button type="button" class="btn btn-primary Register-submit" onclick="window.location.href='Notes.html'">Register</button>
+                                      </form>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!--Log In-->
+          <!--Start of Modal 2-->
+          <div class="modal fade modal-lg" id="LogInModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header"><button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6 modalLeft">
+                                <img src="Images/Login.jpg" alt="img" class="modal-img">
+                            </div>
+                            <div class="col-6 modalRight">
+                                <div>
+                                    <h3>Welcome Back</h3>
+                                    <form class="Login-Form">
+                                        <div class="mb-3">
+                                          <label for="InputEmail" class="form-label">Email address</label>
+                                          <input type="email" class="form-control" id="OldEmail">
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="InputPassword" class="form-label">Password</label>
+                                          <input type="password" class="form-control" id="OldPassword">
+                                        </div>
+                                        <button type="button" class="btn btn-primary login-submit" onclick="window.location.href='Notes.html'">Log In</button>
+                                      </form>
+                                  </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!--End of Modal 2-->
+        <!--End of Modal Section-->
+<div class="aboutUs"><h2>About Us</h2></div>
+
+<div class="introduction container">
+    <div class="row col-md-12">
+        <div class="col-md-9 information">
+        <h4><mark>Who Are We?</mark></h4>
+          <p>We are Team LEO from EDUSN Digital School, and we would like to introduced you to our Academic Organizer website EduWave. </p>
+          <br>
+         <h4><mark>Our Aim</mark></h4><p>Our purpose of developing EduWave is for students to help focusing on self-study. Students can use our website as a assistance to create systematic schedules, organizing notes and adding reminders, etc,. EduWave hope to have an amazing acdemic journey for all of our fellow students.</p>
+        </div>
+        <div class="col-md-3">
+          <div class="background">
+            <img src="Images/Graduate.png" alt="img" class="intro-icon">
+          </div>
+        </div>
+    </div>
+</div>
+
+<!--Start of Member Profile-->
+<div class="banner">
+    <div class="container">
+        <h4 class="ot">Our Team</h4>
+        <div class="row ourteam">
+            <div class="col-md-3 clear-box mx-auto"><img src="Images/LLY.png" alt="img" class="member-pic"><p>Linn Lattyar</p></div>
+            <div class="col-md-3 clear-box mx-auto"><img src="Images/EDMM.png" alt="img" class="member-pic"><p>Eaindra Myomin</p></div>
+            <div class="col-md-3 clear-box mx-auto"><img src="Images/OKB.png" alt="img" class="member-pic"><p>Okkar Bo</p></div>
+        </div>
+    </div>
+</div>
+<!--End of Member Profile-->
+<!--Start of FAQ Session-->
+<div class="container FAQ">
+    <h4>FAQ</h4>
+    <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item">
+            <p class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                    What features does EduWave offer?
+                </button>
+            </p>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>EduWave offers 6 features for our users.</strong> They are Notes, Reminders, Time-Table, Calendar, Timer & Goals. You can read the detail information about each features on our <a href="Features.html">Features</a> page.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <p class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Do you offer any tips or resources for effective studying?
+                </button>
+            </p>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Yes, we do offer tips and resources for studying effectively.</strong> You can check them on our <a href="StudyTips.html">Tips & Tricks</a> page. We also provide additional tips in our EduWave student community. Here is the link ⇨ <a href="https://discord.gg/4DQUtXVPRy">https://discord.gg/4DQUtXVPRy</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <p class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Is EduWave free to use?
+                </button>
+            </p>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>EduWave is completely free to use!</strong> You can start your organized journey with EduWave by just creating an account for your own, no subscribtion or payment required!
+                </div>
+            </div>
+        </div>
+    </div>    
+</div><!--Start of Footer Section-->
+<div class="footer">
+    <div class="row">
+      <div class="col-md-3 footer-p1">
+        <img src="Images/EduWave.png" alt="img" class="Footer-logo">
+      </div>
+      <div class="col-md-3 footer-p2">
+        <ul>
+          <b>Pages</b>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="StudyTips.html">Tips & Tricks</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          <li><a href="Reference.html">References</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-p3">
+        <ul>
+          <b>Our Features</b>
+          <li><a href="Features.html#Notes">Notes</a></li>
+          <li><a href="Features.html#Reminders">Reminders</a></li>
+          <li><a href="Features.html#Time-Table">Time-Table</a></li>
+          <li><a href="Features.html#Calendar">Calendar</a></li>
+          <li><a href="Features.html#Timer">Timer</a></li>
+          <li><a href="Features.html#Goals">Goals</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 social footer-p4">
+        <b>Get In Touch</b>
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=61565155768555&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+        <a href="https://t.me/+aLzxMEa9u480YmI1" target="_blank"><i class="bi bi-telegram"></i></a>
+        <a href="https://www.youtube.com/@EduWave_Official "><i class="bi bi-youtube"></i></a>
+        <br>
+        <p class="Gmail"><b>Gmail</b> eduwaveleo2024@gmail.com</p>
+        <div class="stucom">
+          <b>EduWave Student Community</b>
+          <a href="https://discord.gg/4DQUtXVPRy" target=”_blank” class="btn join-btn">Join Now</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copy-right">© 2024 EduWave | All Rights Reserved.</p>
+  </div>
+  <!--End of Footer Section-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="Navbar.js"></script>
+</body>
+</html>

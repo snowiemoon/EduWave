@@ -1,0 +1,112 @@
+.header{
+    width: 100%;
+    height: 150px;
+    margin-top: 60px;
+    padding-top: 30px;
+    background-image: url(Images/Blue-Banner3.jpg);
+    background-size: cover;
+    padding: 25px;
+    position: fixed;
+}
+#Scrollspy-bar{
+    margin-top: 35px;
+    margin-left: 50px;
+    width: 100%;
+}
+#Scrollspy-bar a{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.507);
+    text-decoration: none;
+    color: black;
+}
+.features-info{
+    width: 100%;
+    padding-top: 200px;
+}
+.row{
+    width: 100%;
+}
+.icon-bg{
+    margin-top: 50px;
+}
+.icon-img{
+    width: 90%;
+}
+.features{
+    width: 100%;
+    margin-top: 50px;
+}
+.features div{
+    margin-top: 5px;
+}
+.features li{
+    margin-top: 25px;
+}
+.note-input-img{
+    width: 80%;
+}
+.note-color-img{
+    width: 40%;
+}
+.note-img{
+    width: 100%;
+}
+.note-create-img, .note-editDelete-img{
+    width: 30%;
+}
+.note-editDelete-img{
+    margin-top: 10px;
+}
+.note-search-img{
+    width: 50%;
+}
+.reminder-img{
+    width: 100%;
+}
+.Timetable-img2, .Timetable-img3, .Timetable-img5{
+    width: 100%;
+}
+.timer-img-1{
+    width: 80%;
+}
+.timer-img-3{
+    width: 100%;
+}
+.calendar-img2{
+    width: 100%;
+}
+.goal-img1, .goal-img2{
+    width: 100%;
+}
+@media only screen and (max-width:  1040px) {
+    .header{
+        height: 250px;
+    }
+    .Feature-container{
+        width: 100%;
+    }
+    .Scrollspy-container{
+        width: 100%;
+    }
+    #Scrollspy-bar{
+        width: 100%;
+    }
+    .features-info{
+        width: 100%;
+        padding-top: 300px;
+    }
+} 
+@media only screen and (max-width:  546px) {
+    .Scrollspy-container{
+        width: 100%;
+        display: none;
+    }
+    .header{
+        height: 150px;
+    }
+    .features-info{
+        width: 100%;
+        padding-top: 200px;
+    }
+} 
